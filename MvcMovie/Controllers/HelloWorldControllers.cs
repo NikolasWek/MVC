@@ -4,12 +4,14 @@ namespace MvcMovie.Controllers;
 
 public class HelloWorldControllers : Controller{
 
-    public string Index(){
-        return "This is my default action...";
+    public IActionResult Index(){
+        return View();
     }
 
     public string Welcome(){
         return "This is the Welcome action method...";
     }
+
+    
 
 }
